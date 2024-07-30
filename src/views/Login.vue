@@ -3,16 +3,19 @@ import logoMarca from '@/assets/LogoMarcaRemake.svg'
 import login from '@/assets/login.png'
 import router from "@/router";
 import {ref} from "vue";
+import {useAuth} from "@/store/user.js";
+
 const emailInput = ref('')
 const passwordInput = ref('')
 
+const storeUser = useAuth()
 
-function handlerLogin(){
+function handlerLogin() {
   localStorage.setItem('logged', true)
   router.push('/home')
 }
-</script>
 
+</script>
 <template>
   <v-main>
     <v-container fluid>
@@ -48,7 +51,7 @@ function handlerLogin(){
               <v-btn block color="primary" class="rounded-lg" height="56px" @click="handlerLogin">
                 Acessar
               </v-btn>
-              <v-divider class="my-12"> Ou continue com </v-divider>
+              <v-divider class="my-12"> Ou continue com</v-divider>
               <div class="d-flex align-center justify-center ga-4 mb-8">
                 <v-btn icon style="color: #d93f21">
                   <v-icon>mdi-google</v-icon>

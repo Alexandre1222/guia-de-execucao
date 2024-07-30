@@ -25,6 +25,10 @@ const router = createRouter({
                 requiresAuth: true
             }
         },
+        {
+            path: '/:pathMatch(.*)*',
+            redirect: "/home",
+        }
     ]
 })
 

@@ -4,8 +4,10 @@ import HeaderNav from "@/components/HeaderNav.vue";
 </script>
 
 <template>
-  <HeaderNav/>
-  <slot/>
+  <v-main>
+    <HeaderNav/>
+    <slot/>
+  </v-main>
 </template>
 
 <style scoped>
