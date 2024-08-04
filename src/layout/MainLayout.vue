@@ -1,5 +1,4 @@
 <script setup>
-
 import HeaderNav from "@/components/HeaderNav.vue";
 import BottomNavigation from '@/components/BottomNavigation.vue'
 </script>
