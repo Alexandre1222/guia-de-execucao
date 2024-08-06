@@ -32,6 +32,7 @@ function handlerLogin() {
               <v-text-field
                   label="Email"
                   placeholder="Email"
+                  autocomplete="username"
                   variant="outlined"
                   dense
                   v-model="emailInput"
@@ -44,6 +45,7 @@ function handlerLogin() {
                   append-icon="mdi-eye"
                   type="password"
                   v-model="passwordInput"
+                  autocomplete="current-password"
               ></v-text-field>
               <div class="text-end">
                 <v-btn variant="text" class="text-primary me-n2">Esqueceu sua senha?</v-btn>

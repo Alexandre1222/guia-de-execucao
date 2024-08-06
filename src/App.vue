@@ -44,7 +44,6 @@ onErrorCaptured((err, vm, info) => {
       <template v-slot:actions>
         <v-btn
             icon
-            class="mt-n7"
             @click="snackbar.show = false"
         >
           <v-icon>mdi-close</v-icon>

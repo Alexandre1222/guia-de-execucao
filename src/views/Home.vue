@@ -1,6 +1,7 @@
 <script setup>
 import guiaExecucao from '@/assets/home/guiaDeExecucao.jpeg'
 import emDesenvolvimento from '@/assets/home/emDesenvolvimento.jpg'
+import router from "@/router/index.js";
 </script>
 
 <template>
@@ -8,7 +9,7 @@ import emDesenvolvimento from '@/assets/home/emDesenvolvimento.jpg'
     <v-container fluid>
       <v-row>
         <v-col cols="12" sm="6" md="6">
-          <v-card link variant="flat" rounded="lg" class="mx-auto" height="250">
+          <v-card link @click.stop="router.push('/example-pillar')" variant="flat" rounded="lg" class="mx-auto" height="250">
             <v-img
                 height="100%"
                 :src="guiaExecucao"
@@ -34,6 +35,7 @@ import emDesenvolvimento from '@/assets/home/emDesenvolvimento.jpg'
             </v-card-text>
           </v-card>
         </v-col>
+
       </v-row>
     </v-container>
   </v-responsive>

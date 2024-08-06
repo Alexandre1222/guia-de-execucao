@@ -11,8 +11,8 @@ watch(activeBreakpoint, (newBreakpoint) => {
 });
 </script>
 <template>
-<v-bottom-navigation grow v-if="isMobile" bg-color="primary">
-  <v-btn @click.stop="router.push('/login')">
+<v-bottom-navigation :active="isMobile" grow bg-color="primary">
+  <v-btn @click.stop="router.push('/')">
     <v-icon>mdi-home</v-icon>
 
     <span>Inicio</span>
