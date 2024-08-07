@@ -42,7 +42,7 @@ function handlerLogin() {
                   placeholder="Password"
                   variant="outlined"
                   dense
-                  append-icon="mdi-eye"
+
                   type="password"
                   v-model="passwordInput"
                   autocomplete="current-password"
