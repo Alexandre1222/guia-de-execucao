@@ -13,6 +13,24 @@ export default defineConfig({
             registerType: 'autoUpdate',
             devOptions: {
                 enabled: true
+            },
+            manifest: {
+                name: 'Guia de Execução Remake',
+                short_name: 'GUia',
+                description: 'App remake do guia de execução',
+                theme_color: '#f00808',
+                icons: [
+                    {
+                        src: 'src/assets/splashscreen/manifest-icon-192.maskable.png',
+                        sizes: '192x192',
+                        type: 'image/png'
+                    },
+                    {
+                        src: 'src/assets/splashscreen/manifest-icon-512.maskable.png',
+                        sizes: '512x512',
+                        type: 'image/png'
+                    }
+                ]
             }
         })
     ],
