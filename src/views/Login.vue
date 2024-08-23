@@ -26,7 +26,6 @@ function handlerLogin() {
                 class="mx-auto"
                 :src="logoMarca"
             ></v-img>
-            Te fuder Bryan
             <h1 class="text-h4 text-center font-weight-bold mb-2">Bem-vindo ao Guia de Execução Remake</h1>
             <div class="text-h6 font-weight-regular text-center mb-8">Acesse com seu login</div>
             <v-form>
