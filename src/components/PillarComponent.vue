@@ -1,5 +1,6 @@
 <script setup>
 import {ref} from "vue";
+import TitleComponent from "@/components/TitleComponent.vue";
 
 const props = defineProps(['hide_download', 'file', 'id', 'index', 'name', 'pillar_name'])
 // const open = ref({});
@@ -42,7 +43,7 @@ function toggle_card(card_name, nivel) {
 
 <template>
   <v-responsive class=" mt-2 mb-0">
-    <v-card class="mx-auto text-primary" style="cursor: pointer">
+    <v-card class="mx-auto mb-3 text-primary" style="cursor: pointer">
       <div v-ripple>
         <v-chip class="float-right mt-3 mr-2 d-flex" color="warning"
                 size="small">
@@ -63,7 +64,11 @@ function toggle_card(card_name, nivel) {
           </v-card-text>
         </v-card>
       </v-slide-y-transition>
+
     </v-card>
+    <TitleComponent>
+
+    </TitleComponent>
   </v-responsive>
 </template>
 
