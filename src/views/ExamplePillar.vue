@@ -11,7 +11,7 @@ console.log(pillars.value)
 </script>
 
 <template>
-  <v-container fluid class="pa-2">
+  <v-container  class="ma-auto pa-2">
     <v-select density="comfortable" single-line hide-details class="mb-2" variant="outlined" label="Escolha um Pillar"
               bg-color="white" :items="pillars" item-title="pillarName" item-key="pk"></v-select>
     <PillarComponent :file="null" :index="0" id="pillar_name" pillar_name="titulo foda">

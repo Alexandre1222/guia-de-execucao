@@ -22,7 +22,7 @@ export default defineConfig(({mode}) => {
                     name: 'Guia de Execução Remake',
                     short_name: 'GUia',
                     description: 'App remake do guia de execução',
-                    theme_color: '#f00808',
+                    theme_color: '#7e49d2',
                     icons: [
                         {
                             src: 'src/assets/splashscreen/manifest-icon-192.maskable.png',

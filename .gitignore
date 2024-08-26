@@ -10,9 +10,12 @@ lerna-debug.log*
 node_modules
 .DS_Store
 dist
+dev-dist
 dist-ssr
 coverage
 *.local
+certs
+dev-dist
 
 /cypress/videos/
 /cypress/screenshots/
@@ -26,6 +29,7 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
 
 *.tsbuildinfo
 .vercel
