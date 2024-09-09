@@ -14,23 +14,23 @@ export default defineConfig(({mode}) => {
                 force: true, // force generation of certs even without setting https property in the vite config
             }),
             VitePWA({
-                registerType: 'autoUpdate',
                 devOptions: {
                     enabled: true
                 },
                 manifest: {
                     name: 'Guia de Execução Remake',
-                    short_name: 'GUia',
+                    short_name: 'Guia Remake',
                     description: 'App remake do guia de execução',
                     theme_color: '#7e49d2',
+                    background_color: '#7e49d2',
                     icons: [
                         {
-                            src: 'src/assets/splashscreen/manifest-icon-192.maskable.png',
+                            src: '/splashscreen/manifest-icon-192.maskable.png',
                             sizes: '192x192',
                             type: 'image/png'
                         },
                         {
-                            src: 'src/assets/splashscreen/manifest-icon-512.maskable.png',
+                            src: '/splashscreen/manifest-icon-512.maskable.png',
                             sizes: '512x512',
                             type: 'image/png'
                         }
